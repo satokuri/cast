@@ -1,0 +1,13 @@
+$base_bg_color:#242527;
+$base_font_color:#666;
+$menu_width:200;
+
+// Font
+$gothic: "Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'ＭＳ Ｐゴシック'", sans-serif;
+$mincho: "明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+
+@import "compass";
+@import 'nomalize';
+@import 'reset';
+@import 'mixin';
+@import 'layout';

@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------------------------------------------
+	layout
+---------------------------------------------------------------------------------------------------- */
+
+body{
+	color: $base_font_color;
+	font-family: $gothic;
+}
+
+header{
+	background-color: $base_bg_color;
+	height: 50px;
+}
+
+#menu{
+	width: $menu_width + px;
+	height: 1000px;
+	// background-color:#35363a;
+	li{
+		height: 40px;
+		line-height: 40px;
+		background: url('/images/ad/bg-menu.png');
+	}
+}
+
+#main{
+	background-color:#fafafa;
+}
+
+footer{
+	background-color: $base_bg_color;
+}
