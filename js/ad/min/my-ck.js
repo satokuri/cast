@@ -1,0 +1,1 @@
+$(function(){for(var i=1;i<=$("ul").length;i++)"block"==$.cookie("menu"+i)&&$("#menu"+i).show();$("div").click(function(){var i=$(this).next("ul");$(i).slideToggle("fast",function(){$.cookie($(i).attr("id"),$(i).css("display"),{expires:1})})})});

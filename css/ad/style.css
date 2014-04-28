@@ -418,35 +418,100 @@ img {
   vertical-align: bottom; }
 
 /* ----------------------------------------------------------------------------------------------------
+	clearfix
+---------------------------------------------------------------------------------------------------- */
+/* line 4, ../../scss/ad/_common.scss */
+#contents {
+  zoom: 1; }
+  /* line 6, ../../scss/ad/_common.scss */
+  #contents:before, #contents:after {
+    content: " ";
+    display: table; }
+  /* line 11, ../../scss/ad/_common.scss */
+  #contents:after {
+    clear: both; }
+
+/* ----------------------------------------------------------------------------------------------------
+	border shadow
+---------------------------------------------------------------------------------------------------- */
+/* line 20, ../../scss/ad/_common.scss */
+#main .block, footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset; }
+
+/* line 25, ../../scss/ad/_common.scss */
+header, #menu li, #main .block, #main .block .subhead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0; }
+
+/* line 30, ../../scss/ad/_common.scss */
+#main .block {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0; }
+
+/* line 35, ../../scss/ad/_common.scss */
+#menu, #menu li i, #main .block {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.3) -1px 0 0 inset; }
+
+/* ----------------------------------------------------------------------------------------------------
 	mixin
 ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------
 	layout
 ---------------------------------------------------------------------------------------------------- */
-/* line 5, ../../scss/ad/_layout.scss */
+/* line 4, ../../scss/ad/_layout.scss */
 body {
+  font-family: "Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'ＭＳ Ｐゴシック'", sans-serif;
+  font-size: 100%;
+  line-height: 100%;
   color: #666666;
-  font-family: "Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'ＭＳ Ｐゴシック'", sans-serif; }
+  background-color: white; }
 
-/* line 10, ../../scss/ad/_layout.scss */
+/* line 12, ../../scss/ad/_layout.scss */
 header {
-  background-color: #242527;
+  border-top: solid 3px #d96a6d;
   height: 50px; }
 
-/* line 15, ../../scss/ad/_layout.scss */
+/* line 18, ../../scss/ad/_layout.scss */
+#contents {
+  background-color: #f0f1f6; }
+
+/* line 23, ../../scss/ad/_layout.scss */
 #menu {
-  width: 200px;
-  height: 1000px; }
-  /* line 19, ../../scss/ad/_layout.scss */
+  width: 220px;
+  background-color: #e7e8ed;
+  float: left; }
+  /* line 28, ../../scss/ad/_layout.scss */
   #menu li {
-    height: 40px;
-    line-height: 40px;
-    background: url("/images/ad/bg-menu.png"); }
+    height: 50px; }
+    /* line 31, ../../scss/ad/_layout.scss */
+    #menu li:hover {
+      background-color: #e0e1e6; }
+    /* line 34, ../../scss/ad/_layout.scss */
+    #menu li i {
+      height: 50px;
+      width: 50px; }
 
-/* line 26, ../../scss/ad/_layout.scss */
+/* line 42, ../../scss/ad/_layout.scss */
 #main {
-  background-color: #fafafa; }
-
-/* line 30, ../../scss/ad/_layout.scss */
-footer {
-  background-color: #242527; }
+  margin-left: 220px;
+  padding: 20px; }
+  /* line 45, ../../scss/ad/_layout.scss */
+  #main .block {
+    background-color: white; }
+    /* line 51, ../../scss/ad/_layout.scss */
+    #main .block .subhead {
+      background-color: #5d95db;
+      color: #FFF;
+      height: 50px;
+      line-height: 50px;
+      text-align: center; }

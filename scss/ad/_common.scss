@@ -1,0 +1,38 @@
+/* ----------------------------------------------------------------------------------------------------
+	clearfix
+---------------------------------------------------------------------------------------------------- */
+%clearfix {
+	zoom: 1;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+/* ----------------------------------------------------------------------------------------------------
+	border shadow
+---------------------------------------------------------------------------------------------------- */
+%line-top{
+	border-top: 1px solid rgba(0, 0, 0, .2);
+	@include box-shadow(rgba(255, 255, 255, .3) 0 1px 0 inset);
+}
+
+%line-bottom{
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	@include box-shadow(rgba(255, 255, 255, .3)0 1px 0);
+}
+
+%line-left{
+	border-left: 1px solid rgba(0, 0, 0, .2);
+	@include box-shadow (rgba(255, 255, 255, .3) -1px 0 0);
+}
+
+%line-right{
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	@include box-shadow(rgba(255, 255, 255, .3) -1px 0 0 inset);
+}

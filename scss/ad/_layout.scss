@@ -1,32 +1,64 @@
 /* ----------------------------------------------------------------------------------------------------
 	layout
 ---------------------------------------------------------------------------------------------------- */
-
 body{
-	color: $base_font_color;
 	font-family: $gothic;
+	font-size:100%;
+	line-height: 100%;
+	color: $base_font_color;
+	background-color: $base_bg_color;
 }
 
 header{
-	background-color: $base_bg_color;
+	border-top: solid 3px #d96a6d;
+	@extend %line-bottom;
 	height: 50px;
+}
+
+#contents{
+	background-color:#f0f1f6;
+	@extend %clearfix;
 }
 
 #menu{
 	width: $menu_width + px;
-	height: 1000px;
-	// background-color:#35363a;
+	@extend %line-right;
+	background-color:#e7e8ed;
+	float: left;
 	li{
-		height: 40px;
-		line-height: 40px;
-		background: url('/images/ad/bg-menu.png');
+		height: 50px;
+		@extend %line-bottom;
+		&:hover{
+			background-color:#e0e1e6;
+		}
+		i{
+			@extend %line-right;
+			height: 50px;
+			width: 50px;
+		}
 	}
 }
 
 #main{
-	background-color:#fafafa;
+	margin-left: $menu_width + px;
+	padding: 20px;
+	.block{
+  		@extend %line-top;
+  		@extend %line-left;
+  		@extend %line-right;
+  		@extend %line-bottom;
+  		background-color: $base_bg_color;
+  		.subhead{
+  			background-color: #5d95db;
+  			color: #FFF;
+  			height: 50px;
+  			line-height: 50px;
+  			text-align: center;;
+  			@extend %line-bottom;
+  		}
+	}
 }
 
 footer{
-	background-color: $base_bg_color;
+	@extend %line-top;
 }
