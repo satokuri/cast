@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2014-04-29 14:18:04
-         compiled from "/Applications/MAMP/htdocs/pandaweb/cast//view/ad/frame.html" */ ?>
-<?php /*%%SmartyHeaderCode:178945666535c5e7a990c67-94823231%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.18, created on 2014-04-29 09:20:13
+         compiled from "/Applications/MAMP/htdocs/cast//view/ad/frame.html" */ ?>
+<?php /*%%SmartyHeaderCode:91790417535f4f7126ab46-81368045%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'd9072494b6995cd3bf3ebe00e71c79d33bc755c6' => 
+    '5981580f9268d399e5d6aa49f34aba4aa73e6d59' => 
     array (
-      0 => '/Applications/MAMP/htdocs/pandaweb/cast//view/ad/frame.html',
-      1 => 1398748679,
+      0 => '/Applications/MAMP/htdocs/cast//view/ad/frame.html',
+      1 => 1398756007,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '178945666535c5e7a990c67-94823231',
+  'nocache_hash' => '91790417535f4f7126ab46-81368045',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.18',
-  'unifunc' => 'content_535c5e7a9ce4d9_48512223',
+  'unifunc' => 'content_535f4f712cbbe1_71727894',
   'variables' => 
   array (
     'config' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_535c5e7a9ce4d9_48512223')) {function content_535c5e7a9ce4d9_48512223($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_535f4f712cbbe1_71727894')) {function content_535f4f712cbbe1_71727894($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -59,6 +59,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id ="title">ここにページのタイトルが入ります。</div>
 		<div id="breadcrumb"><i class="fa fa-home fa-fw"></i><a href="">HOME</a> <i class="fa fa-chevron-right fa-fw"></i> キャスト一覧</div>
 		<div id="contents">
+			<img src="http://cast/images/ad/bg-menu.png">
 			
 		</div>
 	</div>

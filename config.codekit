@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "16903",
 "files": {
+	"\/ad\/headline\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ad\/headline\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/ad\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -118,6 +127,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/ad\/bg-menu-hover.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 958,
+		"inputAbbreviatedPath": "\/images\/ad\/bg-menu-hover.png",
+		"outputAbbreviatedPath": "\/images\/ad\/bg-menu-hover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/ad\/bg-menu.png": {
 		"fileType": 32768,
@@ -386,15 +406,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/scss\/ad\/_common.scss": {
+	"\/scss\/ad\/_extend.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/ad\/_common.scss",
-		"outputAbbreviatedPath": "\/css\/_common.css",
+		"inputAbbreviatedPath": "\/scss\/ad\/_extend.scss",
+		"outputAbbreviatedPath": "\/css\/_extend.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1569,6 +1589,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vender\/smarty\/templates_c\/21194a487c3bdcf7c2a1e0d3b8b43c022c8a0fb3.file.debug.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vender\/smarty\/templates_c\/21194a487c3bdcf7c2a1e0d3b8b43c022c8a0fb3.file.debug.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vender\/smarty\/templates_c\/27991fb9405a41a9baecb4bfec65759b2a29eee2.file.debug.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vender\/smarty\/templates_c\/27991fb9405a41a9baecb4bfec65759b2a29eee2.file.debug.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vender\/smarty\/templates_c\/5981580f9268d399e5d6aa49f34aba4aa73e6d59.file.frame.html.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vender\/smarty\/templates_c\/5981580f9268d399e5d6aa49f34aba4aa73e6d59.file.frame.html.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vender\/smarty\/templates_c\/6a1e55f1e19ce2175aa9110f3d5171041fd80836.file.index.html.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1626,7 +1673,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "kurihara",
+"lastSavedByUser": "satoshi",
 "manualImportLinks": {
 	},
 "projectAttributes": {

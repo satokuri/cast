@@ -4,22 +4,22 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-DB_CHAR	app/config/system.php	/^define('DB_CHAR','utf8');$/;"	d
-DB_HOST	app/config/system.php	/^define('DB_HOST','localhost');$/;"	d
-DB_NAME	app/config/system.php	/^define('DB_NAME','castsystem');$/;"	d
-DB_PASS	app/config/system.php	/^define('DB_PASS','castsystem');$/;"	d
-DB_USER	app/config/system.php	/^define('DB_USER','castsystem');$/;"	d
+APP_PATH	app/configs/system.php	/^define('APP_PATH', ROOT_PATH.'app\/');$/;"	d
+AdminController	app/classes/AdminController.php	/^class AdminController extends Singleton$/;"	c
+DB_CHAR	app/configs/system.php	/^define('DB_CHAR','utf8');$/;"	d
+DB_HOST	app/configs/system.php	/^define('DB_HOST','localhost');$/;"	d
+DB_NAME	app/configs/system.php	/^define('DB_NAME','castsystem');$/;"	d
+DB_PASS	app/configs/system.php	/^define('DB_PASS','castsystem');$/;"	d
+DB_USER	app/configs/system.php	/^define('DB_USER','castsystem');$/;"	d
+DOC_PATH	app/configs/system.php	/^define('DOC_PATH', $_SERVER['DOCUMENT_ROOT'].'\/');$/;"	d
 DS	vender/smarty/libs/Smarty.class.php	/^    define('DS', DIRECTORY_SEPARATOR);$/;"	d
 DataBase	app/classes/DataBase.php	/^class DataBase extends Singleton$/;"	c
-DeleteRow	app/classes/DataBase.php	/^    public function DeleteRow($query, $params)$/;"	f
-ExecuteRow	app/classes/DataBase.php	/^	public function ExecuteRow($query, $params)$/;"	f
-GetRow	app/classes/DataBase.php	/^	public function GetRow($query, $params=array())$/;"	f
-GetRows	app/classes/DataBase.php	/^	public function GetRows($query, $params=array())$/;"	f
 ItemVarName	vender/smarty/libs/sysplugins/smarty_internal_compile_foreach.php	/^        $ItemVarName = '$' . trim($item, '\\'"') . '@';$/;"	v
 PrintTrace	vender/smarty/libs/sysplugins/smarty_internal_configfilelexer.php	/^    public function PrintTrace()$/;"	f
 PrintTrace	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    public function PrintTrace()$/;"	f
 PrintTrace	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^    public function PrintTrace()$/;"	f
 PrintTrace	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    public function PrintTrace()$/;"	f
+ROOT_PATH	app/configs/system.php	/^define('ROOT_PATH', DOC_PATH.TEST_PATH);$/;"	d
 SMARTY_DIR	vender/smarty/libs/Smarty.class.php	/^    define('SMARTY_DIR', dirname(__FILE__) . DS);$/;"	d
 SMARTY_MBSTRING	vender/smarty/libs/Smarty.class.php	/^    define('SMARTY_MBSTRING', function_exists('mb_split'));$/;"	d
 SMARTY_PLUGINS_DIR	vender/smarty/libs/Smarty.class.php	/^    define('SMARTY_PLUGINS_DIR', SMARTY_DIR . 'plugins' . DS);$/;"	d
@@ -125,6 +125,7 @@ Smarty_Template_Cached	vender/smarty/libs/sysplugins/smarty_cacheresource.php	/^
 Smarty_Template_Compiled	vender/smarty/libs/sysplugins/smarty_resource.php	/^class Smarty_Template_Compiled$/;"	c
 Smarty_Template_Source	vender/smarty/libs/sysplugins/smarty_resource.php	/^class Smarty_Template_Source$/;"	c
 Smarty_Variable	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^class Smarty_Variable$/;"	c
+TEST_PATH	app/configs/system.php	/^define('TEST_PATH','\/');$/;"	d
 TPC_yyStackEntry	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^class TPC_yyStackEntry$/;"	c
 TPC_yyToken	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^class TPC_yyToken implements ArrayAccess$/;"	c
 TP_yyStackEntry	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^class TP_yyStackEntry$/;"	c
@@ -134,7 +135,8 @@ Trace	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    pub
 TraceFILE	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^            $TraceFILE = 0;$/;"	v
 TraceFILE	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^            $TraceFILE = 0;$/;"	v
 Undefined_Smarty_Variable	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^class Undefined_Smarty_Variable$/;"	c
-UpdateRow	app/classes/DataBase.php	/^	public function UpdateRow($query, $params)$/;"	f
+VENDER_PATH	app/configs/system.php	/^define('VENDER_PATH', ROOT_PATH.'vender\/');$/;"	d
+VIEW_PATH	app/configs/system.php	/^define('VIEW_PATH', ROOT_PATH.'view\/');$/;"	d
 _CHARSET	vender/smarty/libs/Smarty.class.php	/^    public static $_CHARSET = SMARTY_RESOURCE_CHAR_SET;$/;"	v
 _DATE_FORMAT	vender/smarty/libs/Smarty.class.php	/^    public static $_DATE_FORMAT = SMARTY_RESOURCE_DATE_FORMAT;$/;"	v
 _IS_WINDOWS	vender/smarty/libs/Smarty.class.php	/^    public static $_IS_WINDOWS = false;$/;"	v
@@ -145,6 +147,7 @@ __call	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^    publ
 __clone	app/classes/Singleton.php	/^    final public function __clone()$/;"	f
 __clone	vender/smarty/libs/Smarty.class.php	/^    public function __clone()$/;"	f
 __compile_dir	vender/smarty/libs/sysplugins/smarty_internal_utility.php	/^        $__compile_dir = $smarty->getCompileDir();$/;"	v
+__construct	app/classes/AdminController.php	/^	protected function __construct()$/;"	f
 __construct	app/classes/DataBase.php	/^	protected function __construct()$/;"	f
 __construct	app/classes/Singleton.php	/^    protected function __construct()$/;"	f
 __construct	app/classes/SmartyWrap.php	/^	public function __construct()$/;"	f
@@ -981,7 +984,10 @@ _val	vender/smarty/libs/plugins/function.html_radios.php	/^                    i
 _val	vender/smarty/libs/plugins/function.html_radios.php	/^            $_val = isset($output[$_i]) ? $output[$_i] : '';$/;"	v
 _val	vender/smarty/libs/plugins/function.html_select_date.php	/^            $_val = sprintf('%02d', $i);$/;"	v
 _val	vender/smarty/libs/plugins/function.html_select_time.php	/^            $_val = sprintf('%02d', $i);$/;"	v
-_valid	vender/smarty/templates_c/a9c8980c0237a330c25d50fbe5802069c244a571.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/6a1e55f1e19ce2175aa9110f3d5171041fd80836.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/8cf9abee6d8ade7fd67576b1536bf618e0a8ca1d.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/a78882d3c0dad532dfee34df65350fdd4f794950.file.frame.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/d9072494b6995cd3bf3ebe00e71c79d33bc755c6.file.frame.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
 _value	vender/smarty/libs/plugins/function.html_select_date.php	/^            $_value = $day_value_format ==  '%02d' ? $_val : sprintf($day_value_format, $i);$/;"	v
 _value	vender/smarty/libs/plugins/function.html_select_date.php	/^            $_value = $month_value_format == "%m" ? $_val : strftime($month_value_format, $_month_timestamps[$i]);$/;"	v
 _value	vender/smarty/libs/plugins/function.html_select_time.php	/^            $_value = $hour_value_format == '%02d' ? $_val : sprintf($hour_value_format, $i);$/;"	v
@@ -1021,6 +1027,7 @@ addConfigDir	vender/smarty/libs/Smarty.class.php	/^    public function addConfig
 addDefaultModifiers	vender/smarty/libs/Smarty.class.php	/^    public function addDefaultModifiers($modifiers)$/;"	f
 addMetaTimestamp	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^    protected function addMetaTimestamp(&$content)$/;"	f
 addPluginsDir	vender/smarty/libs/Smarty.class.php	/^    public function addPluginsDir($plugins_dir)$/;"	f
+addStyleSheet	js/html5shiv.js	/^  function addStyleSheet(ownerDocument, cssText) {$/;"	f
 addTemplateDir	vender/smarty/libs/Smarty.class.php	/^    public function addTemplateDir($template_dir, $key=null)$/;"	f
 add_global_vars	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    private function add_global_vars(Array $vars) {$/;"	f
 add_section_vars	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    private function add_section_vars($section_name, Array $vars) {$/;"	f
@@ -1089,7 +1096,7 @@ buildUniqueResourceName	vender/smarty/libs/sysplugins/smarty_resource.php	/^    
 cache	vender/smarty/libs/sysplugins/smarty_cacheresource_custom.php	/^        $this->cache = array();$/;"	v
 cache	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function createTemplateCodeFrame($content = '', $cache = false)$/;"	v
 cache	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function decodeProperties($properties, $cache = false)$/;"	v
-cache_dir	app/classes/SmartyWrap.php	/^	    $this->cache_dir    = "vender\/smarty\/cache\/";$/;"	v
+cache_dir	app/classes/SmartyWrap.php	/^	    $this->cache_dir    = VENDER_PATH."smarty\/cache\/";$/;"	v
 cache_dir	vender/smarty/libs/Smarty.class.php	/^        $this->cache_dir = rtrim($cache_dir, '\/\\\\') . DS;$/;"	v
 cache_dir	vender/smarty/libs/Smarty.class.php	/^    private $cache_dir = null;$/;"	v
 cache_id	vender/smarty/libs/Smarty.class.php	/^            $cache_id = null;$/;"	v
@@ -1253,7 +1260,7 @@ compileTemplate	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerba
 compileTemplateSource	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function compileTemplateSource()$/;"	f
 compileVariable	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    public function compileVariable($variable) {$/;"	f
 compile_check	vender/smarty/libs/Smarty.class.php	/^    public $compile_check = true;$/;"	v
-compile_dir	app/classes/SmartyWrap.php	/^	    $this->compile_dir  = "vender\/smarty\/templates_c\/";$/;"	v
+compile_dir	app/classes/SmartyWrap.php	/^	    $this->compile_dir  = VENDER_PATH."smarty\/templates_c\/";$/;"	v
 compile_dir	vender/smarty/libs/Smarty.class.php	/^        $this->compile_dir = rtrim($compile_dir, '\/\\\\') . DS;$/;"	v
 compile_dir	vender/smarty/libs/Smarty.class.php	/^    private $compile_dir = null;$/;"	v
 compile_id	vender/smarty/libs/Smarty.class.php	/^        $compile_id = $compile_id === null ? $this->compile_id : $compile_id;$/;"	v
@@ -1298,7 +1305,7 @@ components	vender/smarty/libs/sysplugins/smarty_resource.php	/^    public $compo
 condition_by_assign	vender/smarty/libs/sysplugins/smarty_internal_compile_if.php	/^            $condition_by_assign = false;$/;"	v
 condition_by_assign	vender/smarty/libs/sysplugins/smarty_internal_compile_if.php	/^            $condition_by_assign = true;$/;"	v
 conf_file	vender/smarty/libs/sysplugins/smarty_internal_compile_config_load.php	/^        $conf_file = $_attr['file'];$/;"	v
-config	app/config/site.php	/^$config = array($/;"	v
+config	app/configs/site.php	/^$config = array($/;"	v
 config	vender/smarty/libs/sysplugins/smarty_internal_config_file_compiler.php	/^        $this->config = $config;$/;"	v
 config	vender/smarty/libs/sysplugins/smarty_internal_config_file_compiler.php	/^    public $config;$/;"	v
 config	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^        $config = new Smarty_Internal_Config($config_file, $this->smarty, $this);$/;"	v
@@ -1306,7 +1313,7 @@ config	vender/smarty/libs/sysplugins/smarty_resource.php	/^    public static fun
 configLoad	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^    public function configLoad($config_file, $sections = null)$/;"	f
 config_booleanize	vender/smarty/libs/Smarty.class.php	/^    public $config_booleanize = true;$/;"	v
 config_data	vender/smarty/libs/sysplugins/smarty_internal_config_file_compiler.php	/^    public $config_data = array();$/;"	v
-config_dir	app/classes/SmartyWrap.php	/^	    $this->config_dir   = "vender\/smarty\/configs\/";$/;"	v
+config_dir	app/classes/SmartyWrap.php	/^	    $this->config_dir   = VENDER_PATH."smarty\/configs\/";$/;"	v
 config_dir	vender/smarty/libs/Smarty.class.php	/^        $this->config_dir = (array) $this->config_dir;$/;"	v
 config_dir	vender/smarty/libs/Smarty.class.php	/^        $this->config_dir = array();$/;"	v
 config_dir	vender/smarty/libs/Smarty.class.php	/^    private $config_dir = array();$/;"	v
@@ -1350,6 +1357,8 @@ counter	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^    pu
 counters	vender/smarty/libs/plugins/function.counter.php	/^    static $counters = array();$/;"	v
 cpr	app/functions.php	/^function cpr($val){$/;"	f
 createData	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^    public function createData($parent = null)$/;"	f
+createDocumentFragment	js/html5shiv.js	/^  function createDocumentFragment(ownerDocument, data){$/;"	f
+createElement	js/html5shiv.js	/^  function createElement(nodeName, ownerDocument, data){$/;"	f
 createLocalArrayVariable	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function createLocalArrayVariable($tpl_var, $nocache = false, $scope = Smarty::SCOPE_LOCAL)$/;"	f
 createTemplate	vender/smarty/libs/Smarty.class.php	/^    public function createTemplate($template, $cache_id = null, $compile_id = null, $parent = null, $do_clone = true)$/;"	f
 createTemplateCodeFrame	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function createTemplateCodeFrame($content = '', $cache = false)$/;"	f
@@ -1375,12 +1384,15 @@ data	vender/smarty/libs/sysplugins/smarty_internal_parsetree.php	/^    public $d
 data	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^        $this->data = $data;$/;"	v
 data	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^        \/\/        $this->data = preg_replace("\/(\\r\\n|\\r|\\n)\/", "\\n", $data);$/;"	v
 data	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^    public $data;$/;"	v
+database	index.php	/^        $database = new db("root", "", "localhost", "database", array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));$/;"	v
 day_empty	vender/smarty/libs/plugins/function.html_select_date.php	/^    \/\/ $day_empty = null;$/;"	v
 day_extra	vender/smarty/libs/plugins/function.html_select_date.php	/^    $day_extra = null;$/;"	v
 day_format	vender/smarty/libs/plugins/function.html_select_date.php	/^    $day_format = "%02d";$/;"	v
 day_id	vender/smarty/libs/plugins/function.html_select_date.php	/^    $day_id = null;$/;"	v
 day_size	vender/smarty/libs/plugins/function.html_select_date.php	/^    $day_size = null;$/;"	v
 day_value_format	vender/smarty/libs/plugins/function.html_select_date.php	/^    $day_value_format = "%d";$/;"	v
+db	app/classes/AdminController.php	/^		$this->db   = DataBase::getInstance();$/;"	v
+db	app/classes/AdminController.php	/^	protected $db;$/;"	v
 db	index.php	/^$db = DataBase::getInstance();$/;"	v
 debug	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public function pushTrace($file, $uid, $line, $debug = true)$/;"	v
 debug_tpl	vender/smarty/libs/Smarty.class.php	/^        $this->debug_tpl = $tpl_name;$/;"	v
@@ -1388,6 +1400,7 @@ debug_tpl	vender/smarty/libs/Smarty.class.php	/^        $this->debug_tpl = 'file
 debug_tpl	vender/smarty/libs/Smarty.class.php	/^    public $debug_tpl = null;$/;"	v
 debugging	vender/smarty/libs/Smarty.class.php	/^    public $debugging = false;$/;"	v
 debugging_ctrl	vender/smarty/libs/Smarty.class.php	/^    public $debugging_ctrl = 'NONE';$/;"	v
+decode	js/ad/jquery.cookie.js	/^function decode(s) {$/;"	f
 decode	vender/smarty/libs/sysplugins/smarty_internal_resource_eval.php	/^    protected function decode($string)$/;"	f
 decode	vender/smarty/libs/sysplugins/smarty_internal_resource_string.php	/^    protected function decode($string)$/;"	f
 decodeProperties	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function decodeProperties($properties, $cache = false)$/;"	f
@@ -1408,6 +1421,8 @@ defines	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^ * This class d
 definition	vender/smarty/libs/sysplugins/smarty_internal_compile_function.php	/^         \/\/ remove last line break from function definition$/;"	f
 delete	vender/smarty/libs/sysplugins/smarty_cacheresource_custom.php	/^    abstract protected function delete($name, $cache_id, $compile_id, $exp_time);$/;"	f
 delete	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^    abstract protected function delete(array $keys);$/;"	f
+deleteRow	app/classes/DataBase.php	/^    public function deleteRow($query, $params)$/;"	f
+deleterow	index.php	/^        $deleterow = $database->deleteRow("DELETE FROM users WHERE id = ?", array("1"));$/;"	v
 depth	vender/smarty/libs/plugins/modifier.debug_print_var.php	/^function smarty_modifier_debug_print_var ($var, $depth = 0, $length = 40)$/;"	v
 desc	vender/smarty/libs/Smarty.class.php	/^    public $desc = null;$/;"	v
 dir	vender/smarty/libs/Smarty.class.php	/^                $dir = array($/;"	v
@@ -1418,6 +1433,7 @@ directory	vender/smarty/libs/sysplugins/smarty_security.php	/^        $directory
 disableSecurity	vender/smarty/libs/Smarty.class.php	/^    public function disableSecurity()$/;"	f
 disabled_modifiers	vender/smarty/libs/sysplugins/smarty_security.php	/^    public $disabled_modifiers = array();$/;"	v
 disabled_tags	vender/smarty/libs/sysplugins/smarty_security.php	/^    public $disabled_tags = array();$/;"	v
+display	app/classes/AdminController.php	/^	public function display($file)$/;"	f
 display	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^    public function display($template = null, $cache_id = null, $compile_id = null, $parent = null)$/;"	f
 display_days	vender/smarty/libs/plugins/function.html_select_date.php	/^    $display_days = true;$/;"	v
 display_debug	vender/smarty/libs/sysplugins/smarty_internal_debug.php	/^    public static function display_debug($obj)$/;"	f
@@ -1443,8 +1459,10 @@ dpi_default	vender/smarty/libs/plugins/function.html_image.php	/^            $dp
 ds	vender/smarty/libs/sysplugins/smarty_resource.php	/^    protected function normalizePath($_path, $ds=true)$/;"	v
 dsn	app/classes/DataBase.php	/^			$this->dsn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=".DB_CHAR, DB_USER, DB_PASS);$/;"	v
 dsn	app/classes/DataBase.php	/^	protected $dsn;$/;"	v
+e	app/loader.php	/^\/\/ 	$e = error_get_last();$/;"	v
 e	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^        $e = new SmartyCompilerException($error_text);$/;"	v
 enableSecurity	vender/smarty/libs/Smarty.class.php	/^    public function enableSecurity($security_class = null)$/;"	f
+encode	js/ad/jquery.cookie.js	/^function encode(s) {$/;"	f
 encode	vender/smarty/libs/plugins/function.mailto.php	/^    $encode = (empty($params['encode'])) ? 'none' : $params['encode'];$/;"	v
 encoding	vender/smarty/libs/plugins/shared.mb_unicode.php	/^        $encoding = mb_internal_encoding();$/;"	v
 encoding	vender/smarty/libs/plugins/shared.mb_unicode.php	/^function smarty_mb_from_unicode($unicode, $encoding=null)$/;"	v
@@ -1475,6 +1493,7 @@ escape_html	vender/smarty/libs/Smarty.class.php	/^    public $escape_html = fals
 escape_start_tag	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    public static function escape_start_tag($tag_text) {$/;"	f
 escaped_string	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^        $escaped_string = substr($qstr, 1, strlen($qstr)-2); \/\/remove outer quotes$/;"	v
 escapes_single	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    private static $escapes_single = Array('\\\\' => '\\\\',$/;"	v
+executeRow	app/classes/DataBase.php	/^	public function executeRow($query, $params)$/;"	f
 exists	vender/smarty/libs/Smarty.class.php	/^        \/\/ if function or class exists, exit silently (already loaded)$/;"	c
 exists	vender/smarty/libs/sysplugins/smarty_cacheresource.php	/^                $this->exists = true;$/;"	v
 exists	vender/smarty/libs/sysplugins/smarty_cacheresource.php	/^    public $exists = false;$/;"	v
@@ -1488,8 +1507,10 @@ exp_time	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^
 exp_time	vender/smarty/libs/sysplugins/smarty_internal_cacheresource_file.php	/^        public function clearAll(Smarty $smarty, $exp_time = null)$/;"	v
 exp_token	vender/smarty/libs/sysplugins/smarty_internal_config_file_compiler.php	/^                $exp_token = $this->parser->yyTokenName[$token];$/;"	v
 exp_token	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^                    $exp_token = $this->parser->yyTokenName[$token];$/;"	v
+expanID	js/html5shiv.js	/^  var expanID = 0;$/;"	v
 expanded	vender/smarty/libs/plugins/shared.mb_unicode.php	/^        $expanded = mb_convert_encoding($string, "UTF-32BE");$/;"	v
 expanded	vender/smarty/libs/plugins/shared.mb_unicode.php	/^        $expanded = mb_convert_encoding($string, "UTF-32BE", $encoding);$/;"	v
+expando	js/html5shiv.js	/^  var expando = '_html5shiv';$/;"	v
 expected	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^                $expected = array_merge($expected, self::$yyExpectedTokens[$nextstate]);$/;"	v
 expected	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^        $expected = self::$yyExpectedTokens[$state];$/;"	v
 expected	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^                $expected = array_merge($expected, self::$yyExpectedTokens[$nextstate]);$/;"	v
@@ -1600,6 +1621,8 @@ getContent	vender/smarty/libs/sysplugins/smarty_resource.php	/^    abstract publ
 getContent	vender/smarty/libs/sysplugins/smarty_resource_custom.php	/^    public function getContent(Smarty_Template_Source $source)$/;"	f
 getDebugTemplate	vender/smarty/libs/Smarty.class.php	/^    public function getDebugTemplate()$/;"	f
 getDefaultModifiers	vender/smarty/libs/Smarty.class.php	/^    public function getDefaultModifiers()$/;"	f
+getElements	js/html5shiv.js	/^  function getElements() {$/;"	f
+getExpandoData	js/html5shiv.js	/^  function getExpandoData(ownerDocument) {$/;"	f
 getGlobal	vender/smarty/libs/Smarty.class.php	/^    public function getGlobal($varname = null)$/;"	f
 getIncludePath	vender/smarty/libs/sysplugins/smarty_internal_get_include_path.php	/^    public static function getIncludePath($filepath)$/;"	f
 getInstance	app/classes/Singleton.php	/^    public static function getInstance()$/;"	f
@@ -1609,6 +1632,8 @@ getPlugin	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php
 getPluginFromDefaultHandler	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public function getPluginFromDefaultHandler($tag, $plugin_type)$/;"	f
 getPluginsDir	vender/smarty/libs/Smarty.class.php	/^    public function getPluginsDir()$/;"	f
 getRegisteredObject	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^    public function getRegisteredObject($name)$/;"	f
+getRow	app/classes/DataBase.php	/^	public function getRow($query, $params=array())$/;"	f
+getRows	app/classes/DataBase.php	/^	public function getRows($query, $params=array())$/;"	f
 getScope	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function &getScope($scope)$/;"	f
 getScopePointer	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function getScopePointer($scope)$/;"	f
 getStreamVariable	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^    public function getStreamVariable($variable)$/;"	f
@@ -1627,6 +1652,8 @@ get_key	vender/smarty/libs/sysplugins/smarty_internal_debug.php	/^    private st
 get_registered_object	vender/smarty/libs/SmartyBC.class.php	/^    public function get_registered_object($name)$/;"	f
 get_template_vars	vender/smarty/libs/SmartyBC.class.php	/^    public function get_template_vars($name=null)$/;"	f
 get_used_tags	vender/smarty/libs/Smarty.class.php	/^    public $get_used_tags = false;$/;"	v
+getrow	index.php	/^        $getrow = $database->getRow("SELECT email, username FROM users WHERE username =?", array("yusaf"));$/;"	v
+getrows	index.php	/^        $getrows = $database->getRows("SELECT id, username FROM users");$/;"	v
 global_tpl_vars	vender/smarty/libs/Smarty.class.php	/^    public static $global_tpl_vars = array();$/;"	v
 h	app/functions.php	/^function h($str)$/;"	f
 hadLock	vender/smarty/libs/sysplugins/smarty_cacheresource.php	/^            $hadLock = true;$/;"	v
@@ -1663,6 +1690,7 @@ hour_format	vender/smarty/libs/plugins/function.html_select_time.php	/^    $hour
 hour_id	vender/smarty/libs/plugins/function.html_select_time.php	/^    $hour_id = null;$/;"	v
 hour_size	vender/smarty/libs/plugins/function.html_select_time.php	/^    $hour_size = null;$/;"	v
 hour_value_format	vender/smarty/libs/plugins/function.html_select_time.php	/^    $hour_value_format = '%02d';$/;"	v
+html5.elements	js/html5shiv.js	/^    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video',$/;"	p
 i	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^            $i = strpos($cid, '|', $i);$/;"	v
 i	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^        $i = 0;$/;"	v
 i	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^        $i = self::$yy_reduce_ofst[$stateno];$/;"	v
@@ -1687,6 +1715,7 @@ inheritance_child	vender/smarty/libs/sysplugins/smarty_internal_templatecompiler
 inheritance_merge_compiled_includes	vender/smarty/libs/Smarty.class.php	/^    public $inheritance_merge_compiled_includes = true;$/;"	v
 inner	vender/smarty/libs/plugins/function.html_table.php	/^    $inner = 'cols';$/;"	v
 inner_str	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^        $inner_str = substr($qstr, 1, strlen($qstr)-2);$/;"	v
+insertrow	index.php	/^        $insertrow = $database ->insertRow("INSERT INTO users (username, email) VALUES (?, ?)", array("yusaf", "yusaf@email.com"));$/;"	v
 instance	vender/smarty/libs/sysplugins/smarty_internal_configfilelexer.php	/^            $instance = $new_instance;$/;"	v
 instance	vender/smarty/libs/sysplugins/smarty_internal_configfilelexer.php	/^        static $instance = null;$/;"	v
 instance	vender/smarty/libs/sysplugins/smarty_internal_configfilelexer.php	/^    public static function &instance($new_instance = null)$/;"	f
@@ -2160,12 +2189,14 @@ output	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^            
 output	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^        $output = '';$/;"	v
 output	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^                    $output = Smarty_Internal_Filter_Handler::runFilter('output', $output, $_template);$/;"	v
 output	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^                $output = '';$/;"	v
+ownerDocument.createElement	js/html5shiv.js	/^    ownerDocument.createElement = function(nodeName) {$/;"	f
+pageName	app/pages/common.php	/^$pageName = basename($_SERVER['PHP_SELF'],'.php');$/;"	v
 par	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^                $par = implode(',',$this->yystack[$this->yyidx + -1]->minor);$/;"	v
 param1	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public function callTagCompiler($tag, $args, $param1 = null, $param2 = null, $param3 = null)$/;"	v
 param_key	vender/smarty/libs/plugins/function.fetch.php	/^            foreach ($params as $param_key => $param_value) {$/;"	v
 parameter	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public function compileTag($tag, $args, $parameter = array())$/;"	v
-params	app/classes/DataBase.php	/^	public function GetRow($query, $params=array())$/;"	v
-params	app/classes/DataBase.php	/^	public function GetRows($query, $params=array())$/;"	v
+params	app/classes/DataBase.php	/^	public function getRow($query, $params=array())$/;"	v
+params	app/classes/DataBase.php	/^	public function getRows($query, $params=array())$/;"	v
 params	vender/smarty/libs/sysplugins/smarty_internal_compile_private_modifier.php	/^            $params = implode(',', $single_modifier);$/;"	v
 parent	vender/smarty/libs/Smarty.class.php	/^            $parent = $cache_id;$/;"	v
 parent	vender/smarty/libs/Smarty.class.php	/^            $parent = null;$/;"	v
@@ -2331,6 +2362,7 @@ r	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^            
 r	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^                $r = $this->{'yy_r6_' . $this->token}($yysubmatches);$/;"	v
 rdel	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^        $this->rdel = preg_quote($this->smarty->right_delimiter, '\/');$/;"	v
 rdel_length	vender/smarty/libs/sysplugins/smarty_internal_templatelexer.php	/^        $this->rdel_length = strlen($this->smarty->right_delimiter);$/;"	v
+reSkip	js/html5shiv.js	/^  var reSkip = \/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$\/i;$/;"	v
 read	vender/smarty/libs/sysplugins/smarty_cacheresource_keyvaluestore.php	/^    abstract protected function read(array $keys);$/;"	f
 recompiled	vender/smarty/libs/sysplugins/smarty_resource.php	/^        $this->recompiled = $this->handler instanceof Smarty_Resource_Recompiled;$/;"	v
 recompiled	vender/smarty/libs/sysplugins/smarty_resource.php	/^    public $recompiled = null;$/;"	v
@@ -2460,6 +2492,7 @@ save	vender/smarty/libs/sysplugins/smarty_internal_compile_block.php	/^        $
 save	vender/smarty/libs/sysplugins/smarty_internal_compile_function.php	/^        $save = array($_attr, $compiler->parser->current_buffer,$/;"	v
 save	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^        $save = $this->template->has_nocache_code; $/;"	v
 save	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    $save = $this->template->has_nocache_code; $/;"	v
+saveClones	js/html5shiv.js	/^  var saveClones = \/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$\/i;$/;"	v
 save_config_vars	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^            $save_config_vars = $_template->config_vars;$/;"	v
 save_source	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^        $save_source = $this->template->source;$/;"	v
 save_tpl_vars	vender/smarty/libs/sysplugins/smarty_internal_templatebase.php	/^            $save_tpl_vars = $_template->tpl_vars;$/;"	v
@@ -2530,6 +2563,8 @@ setPluginsDir	vender/smarty/libs/Smarty.class.php	/^    public function setPlugi
 setTemplateDir	vender/smarty/libs/Smarty.class.php	/^    public function setTemplateDir($template_dir)$/;"	f
 set_var	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    private function set_var(Array $var, Array &$target_array) {$/;"	f
 setupInlineSubTemplate	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public function setupInlineSubTemplate($template, $cache_id, $compile_id, $caching, $cache_lifetime, $data, $parent_scope, $hash)$/;"	f
+shivDocument	js/html5shiv.js	/^  function shivDocument(ownerDocument) {$/;"	f
+shivMethods	js/html5shiv.js	/^  function shivMethods(ownerDocument, data) {$/;"	f
 short_open_tag	vender/smarty/libs/sysplugins/smarty_internal_resource_php.php	/^        $this->short_open_tag = ini_get( 'short_open_tag' );$/;"	v
 short_open_tag	vender/smarty/libs/sysplugins/smarty_internal_resource_php.php	/^    protected $short_open_tag;$/;"	v
 shorttag_order	vender/smarty/libs/sysplugins/smarty_internal_compile_append.php	/^        $this->shorttag_order = array('var', 'value');$/;"	v
@@ -2735,6 +2770,7 @@ string	vender/smarty/libs/sysplugins/smarty_internal_configfileparser.php	/^    
 string	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^            $this->string = $s->string;$/;"	v
 string	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^            $this->string = (string) $s;$/;"	v
 string	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    public $string = '';$/;"	v
+stringifyCookieValue	js/ad/jquery.cookie.js	/^function stringifyCookieValue(value) {$/;"	f
 strip	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    $this->strip = false;$/;"	v
 strip	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    $this->strip = true;$/;"	v
 strip	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    private $strip = false;$/;"	v
@@ -2752,6 +2788,8 @@ successful	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^  
 successful	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    public $successful = true;$/;"	v
 suffix	vender/smarty/libs/plugins/function.html_image.php	/^                $suffix = '<\/a>';$/;"	v
 suffix	vender/smarty/libs/plugins/function.html_image.php	/^    $suffix = '';$/;"	v
+supportsHtml5Styles	js/html5shiv.js	/^  var supportsHtml5Styles;$/;"	v
+supportsUnknownElements	js/html5shiv.js	/^  var supportsUnknownElements;$/;"	v
 suppressFilter	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public $suppressFilter = false;$/;"	v
 suppressHeader	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public $suppressHeader = false;$/;"	v
 suppressMergedTemplates	vender/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php	/^    public $suppressMergedTemplates = false;$/;"	v
@@ -2799,7 +2837,7 @@ template	vender/smarty/libs/sysplugins/smarty_internal_templateparser.php	/^    
 templateExists	vender/smarty/libs/Smarty.class.php	/^    public function templateExists($resource_name)$/;"	f
 template_class	vender/smarty/libs/sysplugins/smarty_internal_data.php	/^    public $template_class = 'Smarty_Internal_Template';$/;"	v
 template_data	vender/smarty/libs/sysplugins/smarty_internal_debug.php	/^    public static $template_data = array();$/;"	v
-template_dir	app/classes/SmartyWrap.php	/^	    $this->template_dir = "view\/";$/;"	v
+template_dir	app/classes/SmartyWrap.php	/^	    $this->template_dir = VIEW_PATH;$/;"	v
 template_dir	vender/smarty/libs/Smarty.class.php	/^        $this->template_dir = (array) $this->template_dir;$/;"	v
 template_dir	vender/smarty/libs/Smarty.class.php	/^        $this->template_dir = array();$/;"	v
 template_dir	vender/smarty/libs/Smarty.class.php	/^    private $template_dir = array();$/;"	v
@@ -3083,6 +3121,8 @@ unregister_outputfilter	vender/smarty/libs/SmartyBC.class.php	/^    public funct
 unregister_postfilter	vender/smarty/libs/SmartyBC.class.php	/^    public function unregister_postfilter($function)$/;"	f
 unregister_prefilter	vender/smarty/libs/SmartyBC.class.php	/^    public function unregister_prefilter($function)$/;"	f
 unregister_resource	vender/smarty/libs/SmartyBC.class.php	/^    public function unregister_resource($type)$/;"	f
+updateRow	app/classes/DataBase.php	/^	public function updateRow($query, $params)$/;"	f
+updaterow	index.php	/^        $updaterow = $database->updateRow("UPDATE users SET username = ?, email = ? WHERE id = ?", array("yusafk", "yusafk@email.com", "1"));$/;"	v
 upper_string	vender/smarty/libs/plugins/modifier.capitalize.php	/^                    $upper_string = substr_replace($upper_string, mb_strtolower($match[0], Smarty::$_CHARSET), $match[1], strlen($match[0]));$/;"	v
 upper_string	vender/smarty/libs/plugins/modifier.capitalize.php	/^                $upper_string = substr_replace($upper_string, strtolower($match[0]), $match[1], strlen($match[0]));$/;"	v
 upper_string	vender/smarty/libs/plugins/modifier.capitalize.php	/^            $upper_string = mb_convert_case( $string, MB_CASE_TITLE, Smarty::$_CHARSET );$/;"	v
@@ -3164,6 +3204,9 @@ variable	vender/smarty/libs/sysplugins/smarty_internal_config.php	/^            
 variable	vender/smarty/libs/sysplugins/smarty_internal_config.php	/^        foreach ($_config_vars['vars'] as $variable => $value) {$/;"	v
 variable_filters	vender/smarty/libs/sysplugins/smarty_internal_template.php	/^    public $variable_filters = array();$/;"	v
 vdir	vender/smarty/libs/plugins/function.html_table.php	/^    $vdir = 'down';$/;"	v
+view	app/classes/AdminController.php	/^		$this->view = new SmartyWrap();$/;"	v
+view	app/classes/AdminController.php	/^	protected $view;$/;"	v
+view	app/pages/common.php	/^$view = new SmartyWrap();$/;"	v
 width	vender/smarty/libs/plugins/function.html_image.php	/^            $width = $_image_data[0];$/;"	v
 width	vender/smarty/libs/plugins/function.html_image.php	/^        $width = round($width * $_resize);$/;"	v
 width	vender/smarty/libs/plugins/function.html_image.php	/^    $width = '';$/;"	v

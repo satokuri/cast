@@ -4,9 +4,16 @@
  *************************************************************************************************/
 
 $config = array(
+	'use' => array(
+		'headline' => true,
+		'topics'   => true,
+		'analytics'=> true,
+	),
 	'info' => array(
+		'call' => '女性呼び名',
 		'name' => '店舗名を設定してください。',
 		'tel'  => '03-xxxx-xxxx',
+		'url'  => 'http://kir791129.kir.jp/_dev/',
 	),
 	'mail' => array(
 		'info' => 'info@test.com',

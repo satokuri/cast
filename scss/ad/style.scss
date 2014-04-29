@@ -1,5 +1,7 @@
-$base_bg_color:#FFF;
+$base_bg_color:#292A2B;
 $base_font_color:#666;
+$base_link_color:#3A638C;
+$base_border_color:#E5E5E5;
 $menu_width:220;
 
 // Font
@@ -9,6 +11,6 @@ $mincho: "明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝
 @import "compass";
 @import 'nomalize';
 @import 'reset';
-@import 'common';
+@import 'extend';
 @import 'mixin';
 @import 'layout';

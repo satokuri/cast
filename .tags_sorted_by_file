@@ -3,19 +3,26 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
+AdminController	app/classes/AdminController.php	/^class AdminController extends Singleton$/;"	c
+__construct	app/classes/AdminController.php	/^	protected function __construct()$/;"	f
+db	app/classes/AdminController.php	/^		$this->db   = DataBase::getInstance();$/;"	v
+db	app/classes/AdminController.php	/^	protected $db;$/;"	v
+display	app/classes/AdminController.php	/^	public function display($file)$/;"	f
+view	app/classes/AdminController.php	/^		$this->view = new SmartyWrap();$/;"	v
+view	app/classes/AdminController.php	/^	protected $view;$/;"	v
 DataBase	app/classes/DataBase.php	/^class DataBase extends Singleton$/;"	c
-DeleteRow	app/classes/DataBase.php	/^    public function DeleteRow($query, $params)$/;"	f
-ExecuteRow	app/classes/DataBase.php	/^	public function ExecuteRow($query, $params)$/;"	f
-GetRow	app/classes/DataBase.php	/^	public function GetRow($query, $params=array())$/;"	f
-GetRows	app/classes/DataBase.php	/^	public function GetRows($query, $params=array())$/;"	f
-UpdateRow	app/classes/DataBase.php	/^	public function UpdateRow($query, $params)$/;"	f
 __construct	app/classes/DataBase.php	/^	protected function __construct()$/;"	f
+deleteRow	app/classes/DataBase.php	/^    public function deleteRow($query, $params)$/;"	f
 dsn	app/classes/DataBase.php	/^			$this->dsn = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=".DB_CHAR, DB_USER, DB_PASS);$/;"	v
 dsn	app/classes/DataBase.php	/^	protected $dsn;$/;"	v
-params	app/classes/DataBase.php	/^	public function GetRow($query, $params=array())$/;"	v
-params	app/classes/DataBase.php	/^	public function GetRows($query, $params=array())$/;"	v
+executeRow	app/classes/DataBase.php	/^	public function executeRow($query, $params)$/;"	f
+getRow	app/classes/DataBase.php	/^	public function getRow($query, $params=array())$/;"	f
+getRows	app/classes/DataBase.php	/^	public function getRows($query, $params=array())$/;"	f
+params	app/classes/DataBase.php	/^	public function getRow($query, $params=array())$/;"	v
+params	app/classes/DataBase.php	/^	public function getRows($query, $params=array())$/;"	v
 stmt	app/classes/DataBase.php	/^			$this->stmt = $this->dsn->prepare($query);$/;"	v
 stmt	app/classes/DataBase.php	/^	protected $stmt;$/;"	v
+updateRow	app/classes/DataBase.php	/^	public function updateRow($query, $params)$/;"	f
 Singleton	app/classes/Singleton.php	/^abstract class Singleton$/;"	c
 __clone	app/classes/Singleton.php	/^    final public function __clone()$/;"	f
 __construct	app/classes/Singleton.php	/^    protected function __construct()$/;"	f
@@ -24,22 +31,55 @@ getInstance	app/classes/Singleton.php	/^    public static function getInstance()
 key	app/classes/Singleton.php	/^        $key = get_called_class();$/;"	v
 SmartyWrap	app/classes/SmartyWrap.php	/^class SmartyWrap extends Smarty$/;"	c
 __construct	app/classes/SmartyWrap.php	/^	public function __construct()$/;"	f
-cache_dir	app/classes/SmartyWrap.php	/^	    $this->cache_dir    = "vender\/smarty\/cache\/";$/;"	v
-compile_dir	app/classes/SmartyWrap.php	/^	    $this->compile_dir  = "vender\/smarty\/templates_c\/";$/;"	v
-config_dir	app/classes/SmartyWrap.php	/^	    $this->config_dir   = "vender\/smarty\/configs\/";$/;"	v
+cache_dir	app/classes/SmartyWrap.php	/^	    $this->cache_dir    = VENDER_PATH."smarty\/cache\/";$/;"	v
+compile_dir	app/classes/SmartyWrap.php	/^	    $this->compile_dir  = VENDER_PATH."smarty\/templates_c\/";$/;"	v
+config_dir	app/classes/SmartyWrap.php	/^	    $this->config_dir   = VENDER_PATH."smarty\/configs\/";$/;"	v
 left_delimiter	app/classes/SmartyWrap.php	/^		$this->left_delimiter = '<!--{';$/;"	v
 right_delimiter	app/classes/SmartyWrap.php	/^		$this->right_delimiter = '}-->';$/;"	v
-template_dir	app/classes/SmartyWrap.php	/^	    $this->template_dir = "view\/";$/;"	v
-config	app/config/site.php	/^$config = array($/;"	v
-DB_CHAR	app/config/system.php	/^define('DB_CHAR','utf8');$/;"	d
-DB_HOST	app/config/system.php	/^define('DB_HOST','localhost');$/;"	d
-DB_NAME	app/config/system.php	/^define('DB_NAME','castsystem');$/;"	d
-DB_PASS	app/config/system.php	/^define('DB_PASS','castsystem');$/;"	d
-DB_USER	app/config/system.php	/^define('DB_USER','castsystem');$/;"	d
+template_dir	app/classes/SmartyWrap.php	/^	    $this->template_dir = VIEW_PATH;$/;"	v
+config	app/configs/site.php	/^$config = array($/;"	v
+APP_PATH	app/configs/system.php	/^define('APP_PATH', ROOT_PATH.'app\/');$/;"	d
+DB_CHAR	app/configs/system.php	/^define('DB_CHAR','utf8');$/;"	d
+DB_HOST	app/configs/system.php	/^define('DB_HOST','localhost');$/;"	d
+DB_NAME	app/configs/system.php	/^define('DB_NAME','castsystem');$/;"	d
+DB_PASS	app/configs/system.php	/^define('DB_PASS','castsystem');$/;"	d
+DB_USER	app/configs/system.php	/^define('DB_USER','castsystem');$/;"	d
+DOC_PATH	app/configs/system.php	/^define('DOC_PATH', $_SERVER['DOCUMENT_ROOT'].'\/');$/;"	d
+ROOT_PATH	app/configs/system.php	/^define('ROOT_PATH', DOC_PATH.TEST_PATH);$/;"	d
+TEST_PATH	app/configs/system.php	/^define('TEST_PATH','\/');$/;"	d
+VENDER_PATH	app/configs/system.php	/^define('VENDER_PATH', ROOT_PATH.'vender\/');$/;"	d
+VIEW_PATH	app/configs/system.php	/^define('VIEW_PATH', ROOT_PATH.'view\/');$/;"	d
 cpr	app/functions.php	/^function cpr($val){$/;"	f
 h	app/functions.php	/^function h($str)$/;"	f
+e	app/loader.php	/^\/\/ 	$e = error_get_last();$/;"	v
+pageName	app/pages/common.php	/^$pageName = basename($_SERVER['PHP_SELF'],'.php');$/;"	v
+view	app/pages/common.php	/^$view = new SmartyWrap();$/;"	v
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+database	index.php	/^        $database = new db("root", "", "localhost", "database", array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));$/;"	v
 db	index.php	/^$db = DataBase::getInstance();$/;"	v
+deleterow	index.php	/^        $deleterow = $database->deleteRow("DELETE FROM users WHERE id = ?", array("1"));$/;"	v
+getrow	index.php	/^        $getrow = $database->getRow("SELECT email, username FROM users WHERE username =?", array("yusaf"));$/;"	v
+getrows	index.php	/^        $getrows = $database->getRows("SELECT id, username FROM users");$/;"	v
+insertrow	index.php	/^        $insertrow = $database ->insertRow("INSERT INTO users (username, email) VALUES (?, ?)", array("yusaf", "yusaf@email.com"));$/;"	v
+updaterow	index.php	/^        $updaterow = $database->updateRow("UPDATE users SET username = ?, email = ? WHERE id = ?", array("yusafk", "yusafk@email.com", "1"));$/;"	v
+decode	js/ad/jquery.cookie.js	/^function decode(s) {$/;"	f
+encode	js/ad/jquery.cookie.js	/^function encode(s) {$/;"	f
+stringifyCookieValue	js/ad/jquery.cookie.js	/^function stringifyCookieValue(value) {$/;"	f
+addStyleSheet	js/html5shiv.js	/^  function addStyleSheet(ownerDocument, cssText) {$/;"	f
+createDocumentFragment	js/html5shiv.js	/^  function createDocumentFragment(ownerDocument, data){$/;"	f
+createElement	js/html5shiv.js	/^  function createElement(nodeName, ownerDocument, data){$/;"	f
+expanID	js/html5shiv.js	/^  var expanID = 0;$/;"	v
+expando	js/html5shiv.js	/^  var expando = '_html5shiv';$/;"	v
+getElements	js/html5shiv.js	/^  function getElements() {$/;"	f
+getExpandoData	js/html5shiv.js	/^  function getExpandoData(ownerDocument) {$/;"	f
+html5.elements	js/html5shiv.js	/^    'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video',$/;"	p
+ownerDocument.createElement	js/html5shiv.js	/^    ownerDocument.createElement = function(nodeName) {$/;"	f
+reSkip	js/html5shiv.js	/^  var reSkip = \/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$\/i;$/;"	v
+saveClones	js/html5shiv.js	/^  var saveClones = \/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$\/i;$/;"	v
+shivDocument	js/html5shiv.js	/^  function shivDocument(ownerDocument) {$/;"	f
+shivMethods	js/html5shiv.js	/^  function shivMethods(ownerDocument, data) {$/;"	f
+supportsHtml5Styles	js/html5shiv.js	/^  var supportsHtml5Styles;$/;"	v
+supportsUnknownElements	js/html5shiv.js	/^  var supportsUnknownElements;$/;"	v
 DS	vender/smarty/libs/Smarty.class.php	/^    define('DS', DIRECTORY_SEPARATOR);$/;"	d
 SMARTY_DIR	vender/smarty/libs/Smarty.class.php	/^    define('SMARTY_DIR', dirname(__FILE__) . DS);$/;"	d
 SMARTY_MBSTRING	vender/smarty/libs/Smarty.class.php	/^    define('SMARTY_MBSTRING', function_exists('mb_split'));$/;"	d
@@ -3683,4 +3723,7 @@ streams	vender/smarty/libs/sysplugins/smarty_security.php	/^     * To disable al
 streams	vender/smarty/libs/sysplugins/smarty_security.php	/^    public $streams = array('file');$/;"	v
 trusted_dir	vender/smarty/libs/sysplugins/smarty_security.php	/^    public $trusted_dir = array();$/;"	v
 trusted_uri	vender/smarty/libs/sysplugins/smarty_security.php	/^    public $trusted_uri = array();$/;"	v
-_valid	vender/smarty/templates_c/a9c8980c0237a330c25d50fbe5802069c244a571.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/6a1e55f1e19ce2175aa9110f3d5171041fd80836.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/8cf9abee6d8ade7fd67576b1536bf618e0a8ca1d.file.index.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/a78882d3c0dad532dfee34df65350fdd4f794950.file.frame.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v
+_valid	vender/smarty/templates_c/d9072494b6995cd3bf3ebe00e71c79d33bc755c6.file.frame.html.php	/^$_valid = $_smarty_tpl->decodeProperties(array ($/;"	v

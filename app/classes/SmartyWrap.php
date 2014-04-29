@@ -17,6 +17,7 @@ class SmartyWrap extends Smarty
 	    $this->compile_dir  = VENDER_PATH."smarty/templates_c/";
 	    $this->config_dir   = VENDER_PATH."smarty/configs/";
 	    $this->cache_dir    = VENDER_PATH."smarty/cache/";
+	    $this->debugging = true;
 		$this->left_delimiter = '<!--{';
 		$this->right_delimiter = '}-->';
 	}

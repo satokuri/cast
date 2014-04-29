@@ -11,6 +11,12 @@ include(dirname(__FILE__) . '/../vender/smarty/libs/Smarty.class.php');
 include(dirname(__FILE__) . '/classes/SmartyWrap.php');
 include(dirname(__FILE__) . '/classes/DataBase.php');
 
+$view = new SmartyWrap();
+$db   = DataBase::getInstance();
+
+// サイト設定値
+$view->assign('config',$config);
+
 // register_shutdown_function(function() {
 // 	$e = error_get_last();
 // 	if( $e['type'] == E_ERROR ||

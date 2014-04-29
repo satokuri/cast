@@ -20,4 +20,3 @@ function h($str)
 function cpr($val){
     echo "<!-- [DEBUG START] ".print_r($val,1)." [DEBUG END]-->";
 }
-
